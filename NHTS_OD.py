@@ -173,8 +173,8 @@ with col1:
         'GeoJsonLayer',
         fl_zone_shapefile.__geo_interface__,
         get_fill_color='[0, 0, 0, 0]',  # Transparent fill
-        get_line_color='[0, 0, 0, 255]',  # Gray boundary lines
-        get_line_width=200,
+        get_line_color='[33, 168, 168, 255]',  # Gray boundary lines
+        get_line_width=250,
     )
 
     # Create TextLayer with dynamic zoom-based size and elevation
