@@ -25,7 +25,7 @@ if show_cross_zones:
     trip_fl = trip_fl[trip_fl['origin_zone_name']
                       != trip_fl['destination_zone_name']]
 # Read the FL zone shapefile
-fl_zone_shapefile = gpd.read_file(r'shapefiles\fl_zone_shapefile.shp')
+fl_zone_shapefile = gpd.read_file('shapefiles/fl_zone_shapefile.shp')
 
 # Create 3 columns
 col1, col2, col3 = st.columns([7, 0.5, 5])
