@@ -47,7 +47,7 @@ with col3:
         # Provide all the zone names in trip_fl for user to select, add an all zones option
         zone_names = trip_fl['origin_zone_name'].unique()
         selected_zone = st.selectbox("Select an origin zone", [
-                                     "All FL NHTS zones"] + list(zone_names))
+                                     "All FL NHTS zones"] + list(zone_names), index=list(zone_names).index("Miami-Fort Lauderdale-West Palm Beach, FL") + 1)
         # st.write(f"You selected: {selected_zone}")
 
     with sub_col2:
