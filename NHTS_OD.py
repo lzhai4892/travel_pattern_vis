@@ -8,7 +8,7 @@ import geopandas as gpd
 st.set_page_config(layout="wide")
 
 # ad a title
-st.title("Florida Trips Cross NHTS Zones")
+st.title("Florida Trips Across NHTS Zones")
 # data source, full name, add url link
 st.caption(
     "*Data source: [National Household Travel Survey 2022](https://nhts.ornl.gov/), [Documentation](https://nhts.ornl.gov/od/documentation)")
@@ -18,7 +18,7 @@ st.caption(
 # Read NHTS OD data (OD only within FL)
 trip_fl = pd.read_csv('trip_od_within_fl.csv')
 # add a toggle to switch on and off, name it as only show cross zone trips
-show_cross_zones = st.checkbox("Only show cross zone trips", value=True)
+show_cross_zones = st.checkbox("Do not include same-zone trips", value=True)
 
 if show_cross_zones:
     # filter out the origin is the same as the destination
