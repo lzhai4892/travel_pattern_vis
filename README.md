@@ -18,11 +18,11 @@ This application visualizes the annual total trips between zones in Florida usin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/travel-pattern.git
+   git clone https://github.com/yourusername/travel_pattern_vis.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd travel-pattern
+   cd travel_pattern_vis
    ```
 3. Install the required packages:
    ```bash
