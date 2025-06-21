@@ -151,8 +151,8 @@ with col1:
     min_trips = trip_fl_selected['annual_total_trips'].min()
     max_trips = trip_fl_selected['annual_total_trips'].max()
     if max_trips == min_trips:
-        # Avoid division by zero when there is only one OD pair
-        trip_fl_selected['normalized_width'] = (max_width + min_width) / 2
+        # Use a default width when all trips have the same count
+        trip_fl_selected['normalized_width'] = min_width
     else:
         trip_fl_selected['normalized_width'] = min_width + \
             (trip_fl_selected['annual_total_trips'] - min_trips) * \
