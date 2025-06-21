@@ -7,7 +7,7 @@ import geopandas as gpd
 # use wide mode
 st.set_page_config(layout="wide")
 
-# ad a title
+# add a title
 st.title("Florida Trips Across NHTS Zones")
 # data source, full name, add url link
 st.caption(
