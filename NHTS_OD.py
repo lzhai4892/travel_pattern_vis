@@ -150,9 +150,13 @@ with col1:
 
     min_trips = trip_fl_selected['annual_total_trips'].min()
     max_trips = trip_fl_selected['annual_total_trips'].max()
-    trip_fl_selected['normalized_width'] = min_width + \
-        (trip_fl_selected['annual_total_trips'] - min_trips) * \
-        (max_width - min_width) / (max_trips - min_trips)
+    if max_trips == min_trips:
+        # Avoid division by zero when there is only one OD pair
+        trip_fl_selected['normalized_width'] = (max_width + min_width) / 2
+    else:
+        trip_fl_selected['normalized_width'] = min_width + \
+            (trip_fl_selected['annual_total_trips'] - min_trips) * \
+            (max_width - min_width) / (max_trips - min_trips)
 
     # ArcLayer to visualize flows between zones with direction
     arc_layer = pdk.Layer(
