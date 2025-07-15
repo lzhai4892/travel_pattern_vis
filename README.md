@@ -1,7 +1,7 @@
 # Florida Trips Cross NHTS Zones
 
 This application visualizes the annual total trips between zones in Florida using data from the National Household Travel Survey (NHTS) 2022. It leverages Pydeck for map visualization and Streamlit for the web interface.
-[Link to the web app](https://fl-travel-pattern.streamlit.app/)
+[->Link to the web app](https://fl-travel-pattern.streamlit.app/)
 
 ## Features
 
