@@ -227,7 +227,7 @@ with col1:
                 "<small>Percentage of total selected trips: {percentage_of_total} %</small>"
             )
         },
-        map_style=pdk.map_styles.MAPBOX_DARK,
+        map_style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
         height=800
     )
 
