@@ -176,7 +176,8 @@ with col1:
     zone_layer = pdk.Layer(
         'GeoJsonLayer',
         fl_zone_shapefile.__geo_interface__,
-        get_fill_color='[211, 211, 211, 0]',  # Transparent fill with light grey
+        # Transparent fill with light grey
+        get_fill_color='[211, 211, 211, 0]',
         get_line_color='[211, 211, 211, 255]',  # Light grey boundary lines
         get_line_width=250,
     )
@@ -227,7 +228,7 @@ with col1:
                 "<small>Percentage of total selected trips: {percentage_of_total} %</small>"
             )
         },
-        map_style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+        map_style="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
         height=800
     )
 
