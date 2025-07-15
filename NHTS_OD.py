@@ -176,8 +176,8 @@ with col1:
     zone_layer = pdk.Layer(
         'GeoJsonLayer',
         fl_zone_shapefile.__geo_interface__,
-        get_fill_color='[0, 0, 0, 0]',  # Transparent fill
-        get_line_color='[33, 168, 168, 255]',  # Gray boundary lines
+        get_fill_color='[211, 211, 211, 0]',  # Transparent fill with light grey
+        get_line_color='[211, 211, 211, 255]',  # Light grey boundary lines
         get_line_width=250,
     )
 
@@ -187,7 +187,7 @@ with col1:
         data=fl_zone_shapefile,
         get_position="[centroid_x, centroid_y]",
         get_text="zone_name",
-        get_color='[33, 168, 168, 255]',
+        get_color='[211, 211, 211, 255]',  # Light grey text color
         # get_size=16,
         size_scale=0.3,
         # add vertical offset to the text
