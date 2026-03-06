@@ -4,4 +4,5 @@ pydeck
 pytest
 altair<5
 streamlit==1.24.0
-pydeck==0.8.1b0
+pydeck==0.8.1b1
+python_version = 3.11
